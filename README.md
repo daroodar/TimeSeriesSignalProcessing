@@ -14,7 +14,11 @@ This library is for data that is arranged as follows (in the form of lists - thi
 As you can see, the above signal is *a non uniformly sampled signal* as observed by the irregularly spaced timestamps.
 You can apply several functions of this libary to the above data suach as:
 
-     import signal_processing as sp
-     upsampled_signal = upsampling(input_signal,5) # Does upsampling by a factor of 5
-     downsampled_signal = downsampling(upsampled_signal,3) # Does downsampling by a factor of 3
-     sampled_signal = sampling_non_uniformly_sampled_signals(input_signal,freq_in_minutes) # samples the signal on a frequency of given minutes 
+     from signal_processing import signal_processing as sp
+     upsampled_signal = sp.upsampling(input_signal,5) # Does upsampling by a factor of 5
+     downsampled_signal = sp.downsampling(upsampled_signal,3) # Does downsampling by a factor of 3
+     sampled_signal = sp.sampling_non_uniformly_sampled_signals(input_signal,freq_in_minutes) # samples the signal on a frequency of given minutes 
+
+# Installation 
+
+     pip install signal-processing
